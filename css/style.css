@@ -37,6 +37,10 @@ body {
 }
 .video-container video {
   width: 250vh;
+  animation-name: fadein;
+  animation-duration: 5s;
+  -webkit-animation-name: fadein;
+  -webkit-animation-duration: 5s;
 }
 hr {
   width: 100%;
