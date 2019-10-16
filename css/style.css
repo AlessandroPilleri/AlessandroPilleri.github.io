@@ -49,7 +49,7 @@ body {
   opacity: 0.3;
 }
 .video-container video {
-  width: 250vh;
+  width: 200vh;
   animation-name: fadein;
   animation-duration: 5s;
   -webkit-animation-name: fadein;
