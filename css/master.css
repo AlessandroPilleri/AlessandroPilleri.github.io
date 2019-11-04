@@ -71,7 +71,7 @@ li a:hover {
 }
 .title h1 {
   font-size: 3.6rem;
-  text-shadow: 1px 1px 10px #000;
+  text-shadow: 10px 10px 10px #000;
 }
 .title h3 {
   font-family: 'Dancing Script', cursive;

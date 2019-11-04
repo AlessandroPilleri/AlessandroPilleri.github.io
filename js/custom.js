@@ -1,9 +1,10 @@
 var controller = new ScrollMagic.Controller();
 var timelineInit = new TimelineMax();
 
-timelineInit.from(".round", 0.6, {
+timelineInit.from(".round", 1, {
   top: 0,
-  opacity: 0
+  opacity: 0,
+  ease: Power2.easeOut
 })
 .to(".round", 0.8, {
   width: "20rem"
