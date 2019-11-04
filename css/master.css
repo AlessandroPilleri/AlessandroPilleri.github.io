@@ -21,7 +21,7 @@ body {
   margin-left: -10;
   width: 100%;
   z-index: inherit;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 .bcg-parallax img {
   width: 300vh;
@@ -58,15 +58,15 @@ li a:hover {
 }
 .round {
   position: absolute;
-  width: 20rem;
+  width: 0rem;
   height: 20rem;
   border: 5px solid transparent;
   border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
   border-image-slice: 1;
   box-shadow: 10px 10px 10px #000;
   z-index: -1;
-  animation-name: extend;
-  animation-duration: 1s;
+  /*animation-name: extend;
+  animation-duration: 1s;*/
 }
 .title h1 {
   font-size: 3.6rem;
