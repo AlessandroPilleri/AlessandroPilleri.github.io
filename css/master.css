@@ -33,13 +33,14 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  top: 45%;
+  top: 46%;
   right: -5%;
   overflow: hidden;
   transform: rotate(90deg);
 }
 li {
   float: left;
+  border-bottom: 1px solid transparent;
 }
 li a {
   text-shadow: 1px 1px 5px #000;
@@ -50,13 +51,10 @@ li a {
   text-decoration: none;
 }
 li a:hover {
-  animation-name: showbcg;
-  animation-duration: 1s;
 }
 .title {
   position: absolute;
   color: white;
-  font-size: 1.8rem;
 }
 .round {
   position: absolute;
@@ -67,7 +65,18 @@ li a:hover {
   border-image-slice: 1;
   box-shadow: 10px 10px 10px #000;
   z-index: -1;
+  animation-name: extend;
+  animation-duration: 1s;
 }
 .title h1 {
+  font-size: 3.6rem;
   text-shadow: 1px 1px 10px #000;
+}
+@keyframes extend {
+  from {
+    width: 0rem;
+  }
+  to {
+    width: 20rem;
+  }
 }
