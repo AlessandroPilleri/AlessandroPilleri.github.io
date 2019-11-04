@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo&display=swap');
+
+body, html {
+  height: 100vh;
+}
+body {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background: #000;
+  font-family: 'Arimo', sans-serif;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1800px;
+  text-align: center;
+  margin: 0;
+}
+.bcg-parallax {
+  position: absolute;
+  top: -10;
+  margin-left: -10;
+  width: 100%;
+  z-index: inherit;
+  opacity: 0.3;
+}
+.bcg-parallax img {
+  width: 300vh;
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+ul {
+  position: absolute;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  top: 45%;
+  right: -5%;
+  overflow: hidden;
+  transform: rotate(90deg);
+}
+li {
+  float: left;
+}
+li a {
+  text-shadow: 1px 1px 5px #000;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  animation-name: showbcg;
+  animation-duration: 1s;
+}
+.title {
+  position: absolute;
+  color: white;
+  font-size: 1.8rem;
+}
+.round {
+  position: absolute;
+  width: 20rem;
+  height: 20rem;
+  border: 5px solid transparent;
+  border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+  border-image-slice: 1;
+  box-shadow: 10px 10px 10px #000;
+  z-index: -1;
+}
+.title h1 {
+  text-shadow: 1px 1px 10px #000;
+}
