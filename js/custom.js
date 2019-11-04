@@ -11,9 +11,9 @@ timelineInit.from(".round", 0.6, {
 .from(".bcg-parallax img", 2, {
   opacity: 0
 })
-.from(".title", 2, {
+.from(".title", 1, {
   opacity: 0,
-  bottom: "40%"
+  bottom: "35%"
 }, "-=2")
 .from("ul", 2, {
   opacity: 0,
@@ -21,9 +21,7 @@ timelineInit.from(".round", 0.6, {
 }, "-=1.5")
 
 const range = 30;
-
-// const calcValue = (a, b) => (((a * 100) / b) * (range / 100) -(range / 2)).toFixed(1);
-const calcValue = (a, b) => (a/b*range-range/2).toFixed(1) // thanks @alice-mx
+const calcValue = (a, b) => (a/b*range-range/2).toFixed(1)
 
 var timeout;
 document.addEventListener('mousemove', function ({x, y}) {
@@ -32,12 +30,20 @@ document.addEventListener('mousemove', function ({x, y}) {
   }
 
   timeout = window.requestAnimationFrame(function () {
-    const yValue = calcValue(y, window.innerHeight);
-    const xValue = calcValue(x, window.innerWidth);
+    var yValue = calcValue(y, window.innerHeight);
+    var xValue = calcValue(x, window.innerWidth);
 
     TweenMax.to(".bcg-parallax", 1, {
       transform: `translateX(${-xValue}px) translateY(${-yValue}px)`
     });
     //background.style.transform = `translateX(${-xValue}px) translateY(${-yValue}px)`;
+
+    var percY = (yValue*30/100).toFixed(1)
+    var percX = (xValue*30/100).toFixed(1)
+
+    TweenMax.to(".round", 1, {
+      transform: `translateX(${-percX}px) translateY(${-percY}px) rotateX(${yValue}deg) rotateY(${xValue}deg)`
+    })
+
   })
 }, false);
