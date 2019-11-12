@@ -43,7 +43,7 @@ document.addEventListener('mousemove', function ({x, y}) {
     var percX = (xValue*30/100).toFixed(1)
 
     TweenMax.to(".round", 1, {
-      transform: `translateX(${-percX}px) translateY(${-percY}px) rotateX(${yValue}deg) rotateY(${xValue}deg)`
+      transform: `translateX(${-percX}px) translateY(${-percY}px) rotateX(${percY}deg) rotateY(${percX}deg)`
     })
 
   })
