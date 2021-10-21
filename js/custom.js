@@ -124,9 +124,17 @@ document.getElementById("about").addEventListener("click", () => {
       timelineChange.to(".section", 1, {
         opacity: 0
       })
+      .to(".round", 1, {
+        opacity: 0,
+        width: 0
+      }, "-=1")
+      .to(".round", 1, {
+        opacity: 1,
+        width: "50rem"
+      })
       .to(".about", 1, {
         opacity: 1
-      })
+      }, "-=1")
       .from(".progress-value", 1.5, {
         width: "0%"
       }, "-=0.5")
@@ -170,9 +178,17 @@ document.getElementById("projects").addEventListener("click", () => {
       timelineChange.to(".section", 1, {
         opacity: 0
       })
+      .to(".round", 1, {
+        opacity: 0,
+        width: 0
+      }, "-=1")
+      .to(".round", 1, {
+        opacity: 1,
+        width: "50rem"
+      })
       .to(".projects", 1, {
         opacity: 1
-      })
+      }, "-=1")
     }
   }
 })
@@ -206,16 +222,24 @@ document.getElementById("contact").addEventListener("click", () => {
         width: "50rem",
         left: "25%"
       }, "-=1")
-      .to(".projects", 1, {
+      .to(".contact", 1, {
         opacity: 1
       }, "-=1")
     } else {
       timelineChange.to(".section", 1, {
         opacity: 0
       })
-      .to(".projects", 1, {
-        opacity: 1
+      .to(".round", 1, {
+        opacity: 0,
+        width: 0
+      }, "-=1")
+      .to(".round", 1, {
+        opacity: 1,
+        width: "50rem"
       })
+      .to(".contact", 1, {
+        opacity: 1
+      }, "-=1")
     }
   }
 })

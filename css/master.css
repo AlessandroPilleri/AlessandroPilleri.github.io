@@ -332,3 +332,13 @@ a:active {
   margin-top: 5px;
   font-size: 1.2rem;
 }
+.contactContent {
+  position: absolute;
+  color: white;
+  top: 20%;
+  text-align: left;
+  left: 6%;
+  right: 15%;
+  z-index: 0;
+  font-size: 2rem;
+}
