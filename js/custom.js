@@ -41,7 +41,7 @@ timelineInit.from(".round", 1, {
 }, "-=2")
 .from(".title", 1, {
   opacity: 0,
-  top: "60%"
+  top: "55%"
 }, "-=2")
 .from("ul", 2, {
   opacity: 0,
@@ -95,7 +95,7 @@ document.getElementById("about").addEventListener("click", () => {
       animation = true;
       timelineOpen.to(".title", 1, {
         opacity: 0,
-        top: "60%"
+        top: "55%"
       })
       .to(".round", 1.2, {
         height: "0rem",
@@ -117,6 +117,9 @@ document.getElementById("about").addEventListener("click", () => {
       .to(".about", 1, {
         opacity: 1
       }, "-=1")
+      .from(".progress-value", 1.5, {
+        width: "0%"
+      }, "-=0.5")
     } else {
       timelineChange.to(".section", 1, {
         opacity: 0
@@ -124,6 +127,9 @@ document.getElementById("about").addEventListener("click", () => {
       .to(".about", 1, {
         opacity: 1
       })
+      .from(".progress-value", 1.5, {
+        width: "0%"
+      }, "-=0.5")
     }
   }
 })
@@ -138,7 +144,7 @@ document.getElementById("projects").addEventListener("click", () => {
       animation = true;
       timelineOpen.to(".title", 1, {
         opacity: 0,
-        top: "60%"
+        top: "55%"
       })
       .to(".round", 1.2, {
         height: "0rem",
@@ -181,7 +187,7 @@ document.getElementById("contact").addEventListener("click", () => {
       animation = true;
       timelineOpen.to(".title", 1, {
         opacity: 0,
-        top: "60%"
+        top: "55%"
       })
       .to(".round", 1.2, {
         height: "0rem",
