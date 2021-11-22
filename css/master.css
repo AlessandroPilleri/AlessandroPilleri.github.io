@@ -34,7 +34,7 @@ body {
   margin: 0;
   padding: 0;
   top: 45%;
-  right: -8%;
+  right: -10px;
   transform: rotate(90deg);
 }
 .selection li {
@@ -65,10 +65,8 @@ li a:hover {
   border: 5px solid transparent;
   border-bottom-width: 0;
   border-right-width: 0;
-  //border-image: linear-gradient(to top right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
   border-color: skyblue;
   border-image-slice: 1;
-  //box-shadow: 10px 10px 10px #000;
   z-index: -1;
   top: 50%;
   left: 50%;
@@ -81,10 +79,8 @@ li a:hover {
   border: 5px solid transparent;
   border-top-width: 0;
   border-left-width: 0;
-  //border-image: linear-gradient(to top right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
   border-color: skyblue;
   border-image-slice: 1;
-  //box-shadow: 10px 10px 10px #000;
   z-index: -1;
   top: 50%;
   left: 50%;
@@ -172,7 +168,6 @@ li a:hover {
 .progress {
   background: rgba(255,255,255,0.2);
   justify-content: flex-start;
-  //border-radius: 100px;
   align-items: center;
   position: relative;
   padding: 0 5px;
@@ -183,7 +178,6 @@ li a:hover {
 
 .progress-value {
   box-shadow: 0 10px 40px -10px #fff;
-  //border-radius: 100px;
   background: skyblue;
   height: 10px;
 }
@@ -341,4 +335,13 @@ a:active {
   right: 15%;
   z-index: 0;
   font-size: 2rem;
+}
+
+/* Smartphones */
+@media only screen
+and (min-width: 321px) {
+  .bcg-parallax {
+    top: -100%;
+    left: -100%;
+  }
 }

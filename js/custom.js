@@ -19,6 +19,10 @@ var timelineReset = new TimelineMax({onComplete: function() {
   mousemovement = true;
 }});
 
+document.getElementById("about").disabled = true;
+document.getElementById("projects").disabled = true;
+document.getElementById("contact").disabled = true;
+
 // Site opening
 timelineInit.from(".round", 1, {
   top: 0,
@@ -52,6 +56,10 @@ timelineInit.from(".round", 1, {
 // Site transitions
 document.getElementById("home").addEventListener("click", () => {
   if (animation != true && sectionOpened == true) {
+    document.getElementById("home").disabled = false;
+    document.getElementById("about").disabled = true;
+    document.getElementById("projects").disabled = true;
+    document.getElementById("contact").disabled = true;
     sectionOpened = false;
     document.getElementsByClassName("round")[0].style.top = "15%";
     document.getElementsByClassName("round")[0].style.left = "25%";
@@ -87,6 +95,10 @@ document.getElementById("home").addEventListener("click", () => {
 
 document.getElementById("about").addEventListener("click", () => {
   if (animation != true) {
+    document.getElementById("home").disabled = true;
+    document.getElementById("about").disabled = false;
+    document.getElementById("projects").disabled = true;
+    document.getElementById("contact").disabled = true;
     if (sectionOpened == false) {
       sectionOpened = true;
       mousemovement = false;
@@ -144,6 +156,10 @@ document.getElementById("about").addEventListener("click", () => {
 
 document.getElementById("projects").addEventListener("click", () => {
   if (animation != true) {
+    document.getElementById("home").disabled = true;
+    document.getElementById("about").disabled = true;
+    document.getElementById("projects").disabled = false;
+    document.getElementById("contact").disabled = true;
     if (sectionOpened == false) {
       sectionOpened = true;
       mousemovement = false;
@@ -195,6 +211,10 @@ document.getElementById("projects").addEventListener("click", () => {
 
 document.getElementById("contact").addEventListener("click", () => {
   if (animation != true) {
+    document.getElementById("home").disabled = true;
+    document.getElementById("about").disabled = true;
+    document.getElementById("projects").disabled = true;
+    document.getElementById("contact").disabled = false;
     if (sectionOpened == false) {
       sectionOpened = true;
       mousemovement = false;
