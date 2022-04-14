@@ -1,4 +1,4 @@
-/*var controller = new ScrollMagic.Controller();
+var controller = new ScrollMagic.Controller();
 
 var animation = true;
 var mousemovement = false;
@@ -256,7 +256,7 @@ document.getElementById("contact").addEventListener("click", () => {
     }
   }
 })
-*/
+
 
 // Rotate background based on mouse motion
 const range = 30;

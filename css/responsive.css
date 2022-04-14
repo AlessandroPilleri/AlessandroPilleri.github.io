@@ -1,13 +1,69 @@
 /* background */
-@media (max-height: 700px) {
+@media (max-height: 800px) {
     .bcg-parallax img {
         height: 200vh;
     }
 }
-@media (max-height: 500px) {
+@media (max-height: 600px) {
     .bcg-parallax img {
         height: 250vh;
     }
 }
+@media (max-height: 450px) {
+    .bcg-parallax img {
+        height: 300vh;
+    }
+}
+@media (max-width: 1200px) {
+    .bcg-parallax img {
+        left: -30%;
+    }
+}
+@media (max-width: 800px) {
+    .bcg-parallax img {
+        left: -60%;
+    }
+}
+@media (max-width: 500px) {
+    .bcg-parallax img {
+        left: -75%;
+    }
+}
 
 /* home and navbar */
+@media (max-width: 992px) {
+    .square {
+        width: 300px;
+        height: 300px;
+    }
+    .home .title h1 {
+        font-size: 3.5rem;
+    }
+    .home .title p {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 450px) {
+    .square {
+        width: 200px;
+        height: 200px;
+    }
+    .home .title h1 {
+        font-size: 2.5rem;
+    }
+    .home .title p {
+        font-size: 2rem;
+    }
+}
+@media (max-width: 300px) {
+    .square {
+        width: 150px;
+        height: 150px;
+    }
+    .home .title h1 {
+        font-size: 2rem;
+    }
+    .home .title p {
+        font-size: 1.5rem;
+    }
+}
