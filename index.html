@@ -13,197 +13,47 @@
     <title>Alessandro Pilleri - Portfolio</title>
   </head>
   <body>
+
     <!-- background -->
     <div class="bcg-parallax">
-      <img src="./img/bcg.png" alt="background">
+        <img src="./img/bcg.png" alt="background">
     </div>
 
-    <!-- selection -->
-    <div class="selection">
-      <ul>
-        <li id="home" style="border-right: 1px solid white;"><a href="#">HOME</a></li>
-        <li id="about" style="border-right: 1px solid white;"><a href="#">ABOUT ME</a></li>
-        <li id="projects" style="border-right: 1px solid white;"><a href="#">MY PROJECTS</a></li>
-        <li id="contact"><a href="#">CONTACT</a></li>
-      </ul>
-    </div>
-
-    <!-- square -->
-    <div class="round"></div>
-    <div class="round2"></div>
-
-    <!-- content -->
-    <div class="home">
-      <div class="title">
-        <h1>ALESSANDRO PILLERI</h1>
-        <h3>full stack developer</h3>
-      </div>
-    </div>
-
-    <div class="section about">
-      <div class="aboutTitle">
-        <h1>About Me</h1>
-        <p>My name is Alessandro Pilleri and I’m a 21 years old developer. Programming is one of my best hobbies and it became my personal working objective.I worked as a developer at many different projects.</p>
-      </div>
-      <div class="aboutContent">
-        <div class="aboutContentTitle">
-          <h2>Program languages</h2>
-          <div class="round3"></div>
-          <p>Backend and Frontend web developer and software developer for scripts, Desktop applications, game development</p>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+          style="margin-right: 1rem;">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+              <a class="nav-link anchor" href="mailto:apilleri@outlook.com">apilleri@outlook.com</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+              <a class="nav-link anchor" href="https://github.com/AlessandroPilleri">Github</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+              <a class="nav-link anchor" href="./cv.pdf">CV</a>
+            </li>
+          </ul>
         </div>
-        <ul class="webdev">
-          <li>
-            <h3>NodeJS</h3>
-            <div class="progress">
-              <div style="width: 70%" class="progress-value"></div>
-            </div>
-          </li>
-          <li>
-            <h3>PHP</h3>
-            <div class="progress">
-              <div style="width: 50%" class="progress-value"></div>
-            </div>
-          </li>
-          <li>
-            <h3>Python</h3>
-            <div class="progress">
-              <div style="width: 65%" class="progress-value"></div>
-            </div>
-          </li>
-          <li>
-            <h3>HTML</h3>
-            <div class="progress">
-              <div style="width: 80%" class="progress-value"></div>
-            </div>
-          </li>
-          <li>
-            <h3>Bootstrap</h3>
-            <div class="progress">
-              <div style="width: 75%" class="progress-value"></div>
-            </div>
-          </li>
-          <li>
-            <h3>Javascript</h3>
-            <div class="progress">
-              <div style="width: 85%" class="progress-value"></div>
-            </div>
-          </li>
-        </ul>
-        <ul class="softwaredev">
-          <li>
-            <h3>Java</h3>
-            <div class="progress">
-              <div style="width: 85%" class="progress-value"></div>
-            </div>
-          </li>
-          <li>
-            <h3>Kotlin</h3>
-            <div class="progress">
-              <div style="width: 65%" class="progress-value"></div>
-            </div>
-          </li>
-          <li>
-            <h3>C</h3>
-            <div class="progress">
-              <div style="width: 80%" class="progress-value"></div>
-            </div>
-          </li>
-          <li>
-            <h3>Assembly</h3>
-            <div class="progress">
-              <div style="width: 70%" class="progress-value"></div>
-            </div>
-          </li>
-        </ul>
       </div>
-      <div class="additionalSkills">
-        <div class="additionalSkillsTitle">
-          <h2>Additional Skills</h2>
-          <div class="round3"></div>
-        </div>
-        <ul class="additionalSkillsContent">
-          <li>
-            <h3>Setup and management of SQL servers</h3>
-          </li>
-          <li>
-            <h3>Linux and bash scripting</h3>
-          </li>
-          <li>
-            <h3>Configure web devices (routers, switches)</h3>
-          </li>
-          <li>
-            <h3>Development for microcontrollers (MSP, ESP, Raspberry)</h3>
-          </li>
-          <li>
-            <h3>Git-based project setup and usage</h3>
-          </li>
-          <li>
-            <h3>English level B1</h3>
-          </li>
-        </ul>
-      </div>
-    </div>
+    </nav>
 
-    <div class="section projects">
-      <div class="projectsTitle">
-        <h1>Projects</h1>
-        <p>All my project can be found in <a href="https://github.com/AlessandroPilleri">my Github page</a>.</p>
-      </div>
-      <div class="projectsContent">
-        <div class="projectsContentTitle">
-          <h2>Most relevant projects</h2>
-          <div style="width: 35rem" class="round3"></div>
-        </div>
-        <div class="wrapper">
-          <div class="project i1">
-            <img src="./img/oldmusa.png" alt="Old Musa logo">
-            <img style="margin-right: 10px;" src="./img/cnr.png" alt="CNR logo">
-            <div class="i1content">
-              <h3>Old Musa</h3>
-              <p>CNR project, phone app that allows museums employees to monitor all sensors values fast and easy and prevent the exposed art work to wear. If any values exits from a specific range, the app will send immediately a notification to all users.</p>
-            </div>
-          </div>
-          <div class="project i2">
-            <img src="./img/kreostudios.png" alt="kreostudios">
-            <div class="i1content">
-              <h3>Kreostudios.com</h3>
-              <p>Portfolio website for Kreostudios, a visual merchandising agency, work on shop window displays, setup events and restyling interiors</p>
-            </div>
-          </div>
-          <div class="project i3">
-            <img src="./img/ChoraLogo.jpg" alt="Chora logo">
-            <div class="i1content">
-              <h3>Chora</h3>
-              <p>3D game designed for kids that shows a simplify example of terraforming. The gameplay consists in planting trees, pick up fallen apples and use water to grow plants.</p>
-            </div>
-          </div>
-          <div class="project i4">
-            <div class="i1content">
-              <h3>Intelligent Thermostat</h3>
-              <p>Software that manages air temperature in office rooms. Consists in a microcontroller connected to a web server with web interface.</p>
-            </div>
-          </div>
-          <div class="project i5">
-            <div class="i1content">
-              <h3>Middleware Reviso-Salesforce</h3>
-              <p>Sotware that transfers company data from the billing platform Reviso to Salesforce cloud.</p>
+    <!-- Home -->
+    <div id="home">
+      <div class="square"></div>
+      <div class="container home">
+        <div class="row content d-flex align-items-center justify-content-center">
+          <div class="col-12 wrapper">
+            <div class="title">
+              <h1>ALESSANDRO PILLERI</h1>
+              <p>portfolio</p>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="section contact">
-      <div class="contactTitle">
-        <h1>Contact</h1>
-      </div>
-      <div class="contactContent">
-        <ul>
-          <li>apilleri@outlook.com</li>
-          <li><a href="https://t.me/allonpg">Telegram</a></li>
-          <li><a href="https://github.com/AlessandroPilleri">Github</a></li>
-          <li><a href="./cv.pdf">CV</a></li>
-        </ul>
       </div>
     </div>
 

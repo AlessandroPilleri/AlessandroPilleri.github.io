@@ -20,3 +20,22 @@ document.addEventListener('mousemove', function ({x, y}) {
     });
   })
 }, false);
+
+// Project carousel
+$('#des1').css('display', 'block');
+var des = 1;
+function changeDescription() {
+  $('#des' + des).css('display', 'none');
+  des++;
+  if (des == 5) {
+    des = 1;
+  }
+  $('#des' + des).css('display', 'block');
+}
+
+$('#projects').carousel({
+  interval: 10000
+});
+$('#projects').on('slide.bs.carousel', ()=> {
+  changeDescription();
+})

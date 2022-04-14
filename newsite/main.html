@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/master.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <title>Alessandro Pilleri - Portfolio</title>
+  </head>
+  <body>
+
+    <!-- background -->
+    <div class="bcg-parallax">
+        <img src="./img/bcg.png" alt="background">
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+          style="margin-right: 1rem;">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+              <a class="nav-link anchor" href="#work">Work</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+              <a class="nav-link anchor" href="#about">About</a>
+            </li>
+            <li class="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+              <a class="nav-link anchor" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <div id="home">
+      <div class="square"></div>
+      <div class="container home">
+        <div class="row content d-flex align-items-center justify-content-center">
+          <div class="col-12 wrapper">
+            <div class="title">
+              <h1>ALESSANDRO PILLERI</h1>
+              <p>portfolio</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- work -->
+    <div id="work">
+      <div class="container-fluid work">
+        <div class="row projects">
+          <div class="col-12 title">
+            <h1><u>Most relevant projects</u></h1>
+          </div>
+          
+          <div id="projects" class="col-12 carousel slide" data-ride="carousel">
+            <div class="carousel-inner projects-carousel-inner">
+
+              <div class="carousel-item projects-carousel-item active">
+                <div class="carousel-caption projects-carousel-caption">
+                  <div class="card">
+                    <img class="card-img-top p-2" src="img/ChoraLogo.jpg" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item projects-carousel-item">
+                <div class="carousel-caption projects-carousel-caption">
+                  <div class="card">
+                    <img class="card-img-top p-2" src="img/oldmusa.png" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item projects-carousel-item">
+                <div class="carousel-caption projects-carousel-caption">
+                  <div class="card">
+                    <img class="card-img-top p-2" src="img/ibiscus.png" alt="">
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item projects-carousel-item">
+                <div class="carousel-caption projects-carousel-caption">
+                  <div class="card">
+                    <img class="card-img-top p-2" src="img/Logo_bh.png" alt="">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <a class="carousel-control-prev" href="#projects" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#projects" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+
+          <div class="col-4 offset-4 description">
+            <div id="des1" class="des">
+              <h1>Chora</h1>
+              <p>3D game designed for kids that shows a simplify example of terraforming. The gameplay consists in planting trees, pick up fallen apples and use water to grow plants.</p>
+            </div>
+            <div id="des2" class="des">
+              <h1>Old Musa</h1>
+              <p>CNR project, phone app that allows museums employees to monitor all sensors values fast and easy and prevent the exposed art work to wear. If any values exits from a specific range, the app will send immediately a notification to all users.</p>
+            </div>
+            <div id="des3" class="des">
+              <h1>Kreostudios.com</h1>
+              <p>Portfolio website for Kreostudios, a visual merchandising agency, work on shop window displays, setup events and restyling interiors.</p>
+            </div>
+            <div id="des4" class="des">
+              <h1>Boostinghouse.eu</h1>
+              <p>Small society that provides a rank boosting service for any Rocket League player.</p>
+            </div>
+          </div>
+
+          <!--<div class="col-10 offset-1 project">
+            <div class="row wrapper">
+              <div class="col-3 image text-right">
+                <img src="./img/ChoraLogo.jpg" alt="choralogo" style="width: 12rem; height: 12rem; border-radius: 10px;">
+              </div>
+              <div class="col-6 content text-left">
+                <h3>Chora</h3>
+                <p>3D game designed for kids that shows a simplify example of terraforming. The gameplay consists in planting trees, pick up fallen apples and use water to grow plants.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-10 offset-1 project">
+            <div class="row wrapper">
+              <div class="col-6 offset-3 content text-right">
+                <h3>Old Musa</h3>
+                <p>CNR project, phone app that allows museums employees to monitor all sensors values fast and easy and prevent the exposed art work to wear. If any values exits from a specific range, the app will send immediately a notification to all users.</p>
+              </div>
+              <div class="col-3 image text-left">
+                <img src="./img/oldmusa.png" alt="oldmusalogo" style="width: 10rem; height: 10rem; border-radius: 10px;">
+                <img src="./img/cnr.png" alt="cnrlogo" style="width: 8rem; height: 8rem; border-radius: 10px;">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-10 offset-1 project">
+            <div class="row wrapper">
+              <div class="col-3 image">
+                <img src="./img/kreostudios.png" alt="kreostudios" style="height: 20rem; border-radius: 10px;">
+              </div>
+              <div class="col-6 content text-left">
+                <h3>Kreostudios.com</h3>
+                <p>Portfolio website for Kreostudios, a visual merchandising agency, work on shop window displays, setup events and restyling interiors</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-10 offset-1 project">
+            <div class="row wrapper">
+              <div class="col-6 offset-3 content text-right">
+                <h3>Boostinghouse.eu</h3>
+                <p>Small society that provides a rank boosting service for any Rocket League player.</p>
+              </div>
+              <div class="col-3 image">
+                <img src="./img/boostinghouse.png" alt="boostinghouse" style="height: 20rem; border-radius: 10px;">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-10 offset-1 project">
+            <div class="row wrapper">
+              <div class="col-12 content text-left">
+                <h3>Intelligent Thermostat</h3>
+                <p>Software that manages air temperature in office rooms. Consists in a microcontroller connected to a web server with web interface.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-10 offset-1 project">
+            <div class="row wrapper">
+              <div class="col-12 content text-right">
+                <h3>Middleware Reviso-Salesforce</h3>
+                <p>Software that transfers company data from the billing platform Reviso to Salesforce cloud.</p>
+              </div>
+            </div>
+          </div>
+        -->
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"></script>
+    <script src="./js/custom.js" charset="utf-8"></script>
+  </body>
+</html>

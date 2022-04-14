@@ -82,3 +82,78 @@ a:active {
   font-family: 'Dancing Script', cursive;
   text-shadow: 10px 10px 10px #000;
 }
+.work {
+  height: 100vh;
+}
+.projects {
+  border-top: 2px solid #BBE1FA;
+}
+.projects .title {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  color: white;
+  background-color: #0F4C75;
+}
+.projects .title h1 {
+  font-size: 4rem;
+  text-shadow: 5px 5px 5px #000;
+}
+.project {
+  padding: 1rem;
+  margin-bottom: 4rem;
+}
+.project .content {
+  color: #BBE1FA;
+}
+.projects-carousel-inner {
+  height: 400px;
+}
+.projects-carousel-item {
+  width: 100%;
+  height: 100%;
+}
+.projects-carousel-caption {
+  top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  margin: 0 auto;
+  width: fit-content;
+}
+.carousel-control-prev, .carousel-control-next {
+  color: #FFF;
+}
+.card {
+  background-color: transparent;
+  border: 0;
+}
+.card img {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 2rem;
+}
+.card-body {
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-control-prev {
+  left: 40rem;
+}
+.carousel-control-next {
+  right: 40rem;
+}
+.description {
+  top: -2rem;
+  color: white;
+}
+.des {
+  position: absolute;
+  text-align: center;
+  display: none;
+}
+.des h1 {
+  border-bottom: 1px solid #BBE1FA;
+}
