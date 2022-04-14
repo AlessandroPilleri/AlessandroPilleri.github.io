@@ -1,0 +1,13 @@
+/* background */
+@media (max-height: 700px) {
+    .bcg-parallax img {
+        height: 200vh;
+    }
+}
+@media (max-height: 500px) {
+    .bcg-parallax img {
+        height: 250vh;
+    }
+}
+
+/* home and navbar */
