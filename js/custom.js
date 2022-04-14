@@ -20,9 +20,9 @@ var timelineReset = new TimelineMax({onComplete: function() {
 }});
 
 // Site opening
-timelineInit.to(".round", 1, {
-  top: "50%",
-  opacity: 1,
+timelineInit.from(".round", 1, {
+  top: 0,
+  opacity: 0,
   ease: Power2.easeOut
 })
 .from(".round", 0.8, {
@@ -44,13 +44,13 @@ timelineInit.to(".round", 1, {
   top: "55%"
 }, "-=2")
 .from("ul", 2, {
-  opacity: 0
+  opacity: 0,
+  right: "-10%"
 }, "-=1.5")
 
 
 // Site transitions
 document.getElementById("home").addEventListener("click", () => {
-
   if (animation != true && sectionOpened == true) {
     sectionOpened = false;
     document.getElementsByClassName("round")[0].style.top = "15%";
@@ -59,8 +59,7 @@ document.getElementById("home").addEventListener("click", () => {
     mousemovement = false;
     animation = true;
     timelineReset.to(".section", 1, {
-      opacity: 0,
-      display: "none"
+      opacity: 0
     })
     .to(".round", 1, {
       width: "20rem",
@@ -87,7 +86,6 @@ document.getElementById("home").addEventListener("click", () => {
 })
 
 document.getElementById("about").addEventListener("click", () => {
-
   if (animation != true) {
     if (sectionOpened == false) {
       sectionOpened = true;
@@ -117,16 +115,14 @@ document.getElementById("about").addEventListener("click", () => {
         left: "25%"
       }, "-=1")
       .to(".about", 1, {
-        opacity: 1,
-        display: "block"
+        opacity: 1
       }, "-=1")
       .from(".progress-value", 1.5, {
         width: "0%"
       }, "-=0.5")
     } else {
       timelineChange.to(".section", 1, {
-        opacity: 0,
-        display: "none"
+        opacity: 0
       })
       .to(".round", 1, {
         opacity: 0,
@@ -137,8 +133,7 @@ document.getElementById("about").addEventListener("click", () => {
         width: "50rem"
       })
       .to(".about", 1, {
-        opacity: 1,
-        display: "block"
+        opacity: 1
       }, "-=1")
       .from(".progress-value", 1.5, {
         width: "0%"
@@ -148,7 +143,6 @@ document.getElementById("about").addEventListener("click", () => {
 })
 
 document.getElementById("projects").addEventListener("click", () => {
-
   if (animation != true) {
     if (sectionOpened == false) {
       sectionOpened = true;
@@ -178,13 +172,11 @@ document.getElementById("projects").addEventListener("click", () => {
         left: "25%"
       }, "-=1")
       .to(".projects", 1, {
-        opacity: 1,
-        display: "block"
+        opacity: 1
       }, "-=1")
     } else {
       timelineChange.to(".section", 1, {
-        opacity: 0,
-        display: "none"
+        opacity: 0
       })
       .to(".round", 1, {
         opacity: 0,
@@ -195,15 +187,13 @@ document.getElementById("projects").addEventListener("click", () => {
         width: "50rem"
       })
       .to(".projects", 1, {
-        opacity: 1,
-        display: "block"
+        opacity: 1
       }, "-=1")
     }
   }
 })
 
 document.getElementById("contact").addEventListener("click", () => {
-
   if (animation != true) {
     if (sectionOpened == false) {
       sectionOpened = true;
@@ -233,13 +223,11 @@ document.getElementById("contact").addEventListener("click", () => {
         left: "25%"
       }, "-=1")
       .to(".contact", 1, {
-        opacity: 1,
-        display: "block"
+        opacity: 1
       }, "-=1")
     } else {
       timelineChange.to(".section", 1, {
-        opacity: 0,
-        display: "none"
+        opacity: 0
       })
       .to(".round", 1, {
         opacity: 0,
@@ -250,8 +238,7 @@ document.getElementById("contact").addEventListener("click", () => {
         width: "50rem"
       })
       .to(".contact", 1, {
-        opacity: 1,
-        display: "block"
+        opacity: 1
       }, "-=1")
     }
   }
@@ -272,7 +259,7 @@ document.addEventListener('mousemove', function ({x, y}) {
     var yValue = calcValue(y, window.innerHeight);
     var xValue = calcValue(x, window.innerWidth);
 
-    TweenMax.to(".bcg-parallax img", 1.5, {
+    TweenMax.to(".bcg-parallax", 1.5, {
       transform: `translateX(${-xValue*10}px) translateY(${-yValue*10}px)`
     });
   })

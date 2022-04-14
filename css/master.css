@@ -16,23 +16,16 @@ body {
 }
 .bcg-parallax {
   position: absolute;
+  top: -20%;
+  left: -20%;
   width: 100%;
-  height: 100vh;
   z-index: -2;
   opacity: 0.3;
-  overflow: hidden;
 }
 .bcg-parallax img {
-  position: absolute;
-  left: -20%;
-  top: -20%;
-  height: 150vh;
+  width: 400vh;
   filter: blur(1px);
   -webkit-filter: blur(1px);
-}
-.seelction {
-  width: 100%;
-  height: 100vh;
 }
 .selection ul {
   z-index: 1;
@@ -43,7 +36,6 @@ body {
   top: 45%;
   right: -8%;
   transform: rotate(90deg);
-  width: 452px;
 }
 .selection li {
   float: left;
@@ -56,6 +48,8 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+}
+li a:hover {
 }
 .title {
   position: absolute;
@@ -71,13 +65,14 @@ body {
   border: 5px solid transparent;
   border-bottom-width: 0;
   border-right-width: 0;
+  //border-image: linear-gradient(to top right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
   border-color: skyblue;
   border-image-slice: 1;
+  //box-shadow: 10px 10px 10px #000;
   z-index: -1;
-  top: 0;
+  top: 50%;
   left: 50%;
   transform: translate(-45%, -50%);
-  opacity: 0;
 }
 .round2 {
   position: absolute;
@@ -86,8 +81,10 @@ body {
   border: 5px solid transparent;
   border-top-width: 0;
   border-left-width: 0;
+  //border-image: linear-gradient(to top right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
   border-color: skyblue;
   border-image-slice: 1;
+  //box-shadow: 10px 10px 10px #000;
   z-index: -1;
   top: 50%;
   left: 50%;
@@ -175,6 +172,7 @@ body {
 .progress {
   background: rgba(255,255,255,0.2);
   justify-content: flex-start;
+  //border-radius: 100px;
   align-items: center;
   position: relative;
   padding: 0 5px;
@@ -185,6 +183,7 @@ body {
 
 .progress-value {
   box-shadow: 0 10px 40px -10px #fff;
+  //border-radius: 100px;
   background: skyblue;
   height: 10px;
 }
@@ -211,6 +210,8 @@ body {
   display: flex;
   justify-content: space-around;
   flex-wrap: nowrap;
+}
+.additionalSkills li {
 }
 .additionalSkillsContent h3 {
   font-size: 1.5rem;
@@ -340,7 +341,4 @@ a:active {
   right: 15%;
   z-index: 0;
   font-size: 2rem;
-}
-.about, .projects, .contact {
-  display: none;
 }
